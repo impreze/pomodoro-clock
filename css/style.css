@@ -1,0 +1,51 @@
+body {
+  font-family: 'Ubuntu',sans-serif;
+  color: #fff;
+  background-color: coral;
+}
+
+#wrapper {
+	padding-top: 50px;
+	padding-bottom: 20px
+}
+
+.clock {
+  font-size: 100px;
+	padding-bottom: 10px;
+}
+
+.actions {
+	padding-bottom: 30px;
+}
+
+.controls {
+  font-size: 20px;
+}
+
+.adjust {
+  position: relative;
+  cursor: pointer;
+  padding: 5px;
+  bottom: 10px;
+}
+
+.adjust:hover {
+}
+
+.link-btn,.link-btn:focus {
+  color: #fff;
+  border: 2px solid #fff;
+  font-size: 14px;
+  padding: 10px 15px;
+  display: inline-block;
+  width: 100px;
+  margin: 10px;
+  text-decoration: none;
+  transition: all .3s ease 0;
+}
+
+.link-btn:hover {
+  background: #fff;
+  color: #333;
+  text-decoration: none;
+}
