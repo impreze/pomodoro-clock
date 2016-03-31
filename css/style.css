@@ -1,51 +1,109 @@
+html,
 body {
-  font-family: 'Ubuntu',sans-serif;
+  background: #6a5b56;
   color: #fff;
-  background-color: coral;
+  font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
+  font-weight: 100;
 }
 
-#wrapper {
-	padding-top: 50px;
-	padding-bottom: 20px
-}
-
-.clock {
-  font-size: 100px;
-	padding-bottom: 10px;
-}
-
-.actions {
-	padding-bottom: 30px;
-}
-
-.controls {
-  font-size: 20px;
-}
-
-.adjust {
-  position: relative;
+button {
+  border: none;
+  background: none;
+  outline: 0;
+  color: #fff;
   cursor: pointer;
-  padding: 5px;
-  bottom: 10px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.adjust:hover {
+.console {
+  height: 100vh;
+  width: 100%;
+  background: #a21b1b;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  text-align: center;
 }
 
-.link-btn,.link-btn:focus {
-  color: #fff;
-  border: 2px solid #fff;
-  font-size: 14px;
-  padding: 10px 15px;
+.time-controls {
+  text-align: center;
+}
+
+.time-controls .control {
   display: inline-block;
-  width: 100px;
-  margin: 10px;
-  text-decoration: none;
-  transition: all .3s ease 0;
+  background-color: #ffffff;
 }
 
-.link-btn:hover {
-  background: #fff;
-  color: #333;
-  text-decoration: none;
+.time-controls .number {
+  display: inline-block;
+  color: #000;
+  padding: 10px;
+  width: 20px;
+}
+
+.time-controls .modifier {
+  display: inline-block;
+  width: 20px;
+  padding: 10px;
+  background-color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+
+.time-controls .modifier:hover {
+  background-color: #2e2e2e;
+}
+
+.setting p {
+  font-size: 0.8em;
+}
+
+.setting span {
+  font-size: 1.5em;
+}
+
+.setting button {
+  font-size: 1.5em;
+  height: 40px;
+  width: 40px;
+}
+
+.setting {
+  background: #000;
+  display: inline-block;
+  width: 40%;
+  margin: 10px;
+}
+
+#timer {
+  padding: 100px 0 100px;
+}
+
+#timer span {
+  font-size: 4em;
+}
+
+
+.cntrl-btn {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30%;
+}
+
+#btn-default,
+#btn-reset {
+  font-size: 0.8em;
+}
+
+.material-icons.lg {
+  padding: 20px 0;
+  font-size: 54px;
+}
+
+@media (min-width: 40.5em) {
+  .console {
+    margin-top: 50px;
+    max-width: 340px;
+    height: 500px;
+  }
 }
